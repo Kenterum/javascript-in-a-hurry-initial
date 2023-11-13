@@ -43,6 +43,7 @@ document.querySelector(".weather-group").addEventListener("click", function(e){
     //     secondsCorrector = "0" + secondsCorrector;
     // }
 
+    //Local Time Section 
     setInterval(function(){
         let localTime = new Date();
         document.querySelector("span[data-time=hours]").textContent = localTime.getHours().toString().padStart(2,"0");
@@ -57,3 +58,53 @@ document.querySelector(".weather-group").addEventListener("click", function(e){
 //     console.log(a + ": " + animal[a]);
 // };
 
+//Gallery Section 
+const galleryImages = [
+    {
+        src: "./assets/gallery/image1.jpg",
+        alt: "Thumbnail Image 1"
+    },
+    {
+        src: "./assets/gallery/image2.jpg",
+        alt: "Thumbnail Image 2"
+    },
+    {
+        src: "./assets/gallery/image4.jpg",
+        alt: "Thumbnail Image 4"
+    }
+];
+
+/* for (let i in galleryImages) {
+    console.log(galleryImages[i]);
+} */
+
+// galleryImages.forEach(function(image, index) {
+//     console.log(image);
+// });
+let lessons = [
+    {
+      id: "273",
+      title: "Variables",
+      length: 12
+    },
+    {
+     id: "295",
+     title: "Conditionals",
+     length: 12
+    },
+    {
+     id: "299",
+     title: "Functions",
+     length: 12
+    }
+    ]; 
+    
+    // use this variable to add the lesson titles
+    let lessonTitles = [];
+    
+    // write your code below this line\
+    lessons.forEach(function(title){
+        console.log(title);
+    });
+    
+    
